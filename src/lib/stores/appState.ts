@@ -3,12 +3,15 @@ import { writable } from "svelte/store";
 
  export const appState = writable({
 
-  image: '',
-  title: '',
+  // image: '',
+  // title: '',
 
 
    apodData: {
-     url: ''}
+     url: '',
+     title:''
+   }
+     
 
 })
 

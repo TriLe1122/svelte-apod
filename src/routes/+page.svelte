@@ -7,17 +7,18 @@
 	console.log(data);
 </script>
 
-<main class=" bg-white dark:bg-zinc-800 p-10  flex just-center items-center">
-	<!-- <h1>{$appState.title}</h1> -->
-	<!-- {JSON.stringify($appState.apodData)} -->
-
-	
-		<div class="">
-			<img src={$appState?.apodData?.url} alt="" class="w-1/2" />
-		</div>
-		<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
+<main class="hero p-10 flex just-center items-center bg-cover bg-center " style="background-image: url({$appState?.apodData?.url}" >
+	<h1>{$appState.apodData.title}</h1>
 
 </main>
 
 <style scoped>
+
+  .hero{
+    height: 100vh;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+  }
+  
 </style>
